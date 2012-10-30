@@ -49,11 +49,19 @@ MilliTimer measureTimer;
 boolean serOut = CHANGE; // true for debugging, false to save power
 byte nodeId = CHANGE; // unique ID needs to be different for each die.
 // TODO: Add dynamic nodeId assignment and store in PROM
+// Prefixes:
+//                    "J1010" JeeNode
+//                    "S1010" Seeeduino Film
+//                    "E1010" Electric Imp
 //  pubNubDiceId[0] = "J10100000001";  // nodeId 6
 //  pubNubDiceId[1] = "S10100000003";  // nodeId 7
 //  pubNubDiceId[2] = "S10100000004";  // nodeId 8
 //  pubNubDiceId[3] = "S10100000005";  // nodeId 9
 //  pubNubDiceId[4] = "S10100000006";  // nodeId 10
+//  pubNubDiceId[5] = "E10100000001";  // impeeId ????
+//  pubNubDiceId[6] = "E10100000002";  // impeeId ????
+//  pubNubDiceId[5] = "E10100000003";  // impeeId ????
+//  pubNubDiceId[6] = "E10100000004";  // impeeId ????
 
 const int readInterval = 83; // read the accelerometer every readInterval millis
 int ledPin = 8; // status and debugging LED
